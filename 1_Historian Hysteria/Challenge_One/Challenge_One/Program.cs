@@ -4,8 +4,12 @@ class Program {
     static void Main() {
         List<int> column1 = new List<int>();
         List<int> column2 = new List<int>();
+        
         BuildLists(column1, column2);
-
+        
+        column1.Sort();
+        column2.Sort();
+        
         int total = FindDistance(column1, column2);
         
         Console.WriteLine(total);
@@ -24,15 +28,15 @@ class Program {
     }
 
     private static int FindDistance(List<int> column1, List<int> column2) {
-        if (column1.Count < 1) return 0;
+        if (column1.Count == 0) return 0;
         
-        int n = column1.Min();
-        int m = column2.Min();
+        int minColumn1 = column1.Last();
+        int minColumn2 = column2.Last();
         
-        column1.Remove(n);
-        column2.Remove(m);
+        column1.RemoveAt(column1.Count - 1);
+        column2.RemoveAt(column2.Count - 1);
         
-        return Math.Abs(n - m) + FindDistance(column1, column2);
+        return Math.Abs(minColumn1 - minColumn2) + FindDistance(column1, column2);
     }
 }
 

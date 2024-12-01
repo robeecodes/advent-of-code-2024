@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_Historian Hysteria", "1_Historian Hysteria\1_Historian Hysteria.csproj", "{92BC6E9E-E4B0-4482-A2D4-B0DAD5C0D740}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge_One", "Challenge_One\Challenge_One.csproj", "{92BC6E9E-E4B0-4482-A2D4-B0DAD5C0D740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
